@@ -10,5 +10,5 @@ class ProductSerializer(serializers.ModelSerializer):
         if len(value) > 50:
             raise serializers.ValidationError('title length more than 50')
         return value
-    def validate(self, attrs):
-        return super().validate(attrs)
+    # def validate(self, attrs):
+    #     return super().validate(attrs)
